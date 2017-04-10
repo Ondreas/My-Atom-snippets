@@ -23,61 +23,61 @@
   'jason (init)':
     'prefix':'jason'
     'body':"""
-		{
-			"$jason": {
-				"head": {
-					"title": "$1",
-					"description": "$2",
-					"icon": "$3.png",
-					"offline": "true",
-					"styles": {
-						$4
-					},
-					"actions": {
-						$5
-					},
-					"templates": {
-						"body$6": {
-							"sections": [
-								{
-									"items": {
-										"{{#each $jason}}": {
-											"type": "vertical",
-											"components": [
-												{
-													"type": "$7",
-													"text": "{{$8}}"
-												},
-											]
-										}
-									}
-								}
-							]
-						}
-					},
-					"data": {
-					}
+    {
+      "$jason": {
+        "head": {
+          "title": "$1",
+          "description": "$2",
+          "icon": "$3.png",
+          "offline": "true",
+          "styles": {
+            $4
+          },
+          "actions": {
+            $5
+          },
+          "templates": {
+            "body$6": {
+              "sections": [
+                {
+                  "items": {
+                    "{{#each $jason}}": {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "$7",
+                          "text": "{{$8}}"
+                          },
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "data": {
+          }
 				},
-				"body": {
-					"header": {
-						...$9
-						},
-					"sections": [
-						{ ...$10 },
-						{ ...$11 },
-						...$12
-					],
-					"layers": [
-						{ ...$13 },
-						{ ...$14 },
-						...$15
-					],
-					"footer": {
-						...$16
-					}
-				}
-			}
-		}
+        "body": {
+          "header": {
+            ...$9
+          },
+          "sections": [
+            { ...$10 },
+            { ...$11 },
+            ...$12
+          ],
+          "layers": [
+            { ...$13 },
+            { ...$14 },
+            ...$15
+          ],
+          "footer": {
+            ...$16
+          }
+        }
+      }
+    }
     """
 
   'format (font, size, color, padding, ...)':
